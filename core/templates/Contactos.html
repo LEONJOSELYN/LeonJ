@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>CONTACTOS</title>
+        {% load static %}
+        <link rel = "stylesheet" href="{%static 'core/CSS/estilos.css'%}">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">TIENDA</a>
+            <nav class="nav">
+              <ul>
+                  <li><a href="{% url 'inicio1' %}">INICIO</a></li>
+                  <li><a href="{% url 'quienes1' %}">QUIENES SOMOS</a></li>
+                  <li><a href="{% url 'nuestros1' %}">NUESTROS PRODUCTOS</a>
+                      <ul>
+                          <li><a href="{% url 'bebidas1' %}">BEBIDAS</a></li>
+                          <li><a href="{% url 'dulces1' %}">DULCES</a></li>
+                          <li><a href="{% url 'verduras1' %}">VERDURAS</a></li>
+                          <li><a href="{% url 'carnes1' %}">CARNES</a></li>
+                          <li><a href="{% url 'higiene1' %}">HIGIENE</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'contacto1' %}">CONTACTOS</a>
+                      <ul>
+                          <li><a href="{% url 'quejas1' %}">CONTACTANOS</a></li>
+                          <li><a href="{% url 'trabaja1' %}">TRABAJA CON NOSOTROS</a></li>
+                      </ul>
+                  </li>
+
+
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+      <div class="container">
+          <h1>NUESTROS CONTACTOS</h1>
+          <h2>INFORMACION SOBRE NOSOTROS</h2>
+          <p><u><b>NOMBRES:</b></u></p>
+          <li>LOOR ALVAREZ ANGEL ANDRES</li>
+          <li>LEON ALVIA JOSELYN PAMELA</li>
+
+          <div align="center">
+          <img src="{%static 'core/IMG/jefe1.jpg' %}"
+               alt="mensaje de la imagen"
+               width="100"
+               height="150"
+               title="Mi foto"></div>
+
+          <p><u><b>TELEFONOS:</b></u></p>
+          <li>0968351783</li>
+          <li>(04)-2170619</li>
+
+          <div align="center">
+          <img src="{%static 'core/IMG/telefono1.jpg' %}"
+               alt="mensaje de la imagen"
+               width="100"
+               height="100"
+               title="Mi foto"></div>
+
+          <p><u><b>CORREO:</b></u></p>
+          <li>alooralvarez5@gmail.com</li>
+
+          <div align="center">
+          <img src="{%static 'core/IMG/correo1.jpg' %}"
+               alt="mensaje de la imagen"
+               width="150"
+               height="150"
+               title="Mi foto"></div>
+
+       <hr>
+          <h2>ESTAMOS PARA SERVIRLES</h2>
+       <hr>
+
+      </div>
+        <div align="center">
+  <img src="{%static 'core/IMG/mano1.jpg' %}"
+       alt="mensaje de la imagen"
+       width="300"
+       height="200"
+       title="Mi foto">
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>Pagina diseñada por:</p>
+          <p>LOOR ALVAREZ</p>
+          <p>LEON ALVIA</p>
+          <P>Proyecto</P>
+        </div>
+      </footer>
+
+    </body>
+
+</html>

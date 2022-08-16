@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>NUESTROS PRODUCTOS</title>
+        {% load static %}
+        <link rel = "stylesheet" href="{%static 'core/CSS/estilos.css'%}">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">TIENDA</a>
+            <nav class="nav">
+              <ul>
+                  <li><a href="{% url 'inicio1' %}">INICIO</a></li>
+                  <li><a href="{% url 'quienes1' %}">QUIENES SOMOS</a></li>
+                  <li><a href="{% url 'nuestros1' %}">NUESTROS PRODUCTOS</a>
+                      <ul>
+                          <li><a href="{% url 'bebidas1' %}">BEBIDAS</a></li>
+                          <li><a href="{% url 'dulces1' %}">DULCES</a></li>
+                          <li><a href="{% url 'verduras1' %}">VERDURAS</a></li>
+                          <li><a href="{% url 'carnes1' %}">CARNES</a></li>
+                          <li><a href="{% url 'higiene1' %}">HIGIENE</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'contacto1' %}">CONTACTOS</a>
+                      <ul>
+                          <li><a href="{% url 'quejas1' %}">CONTACTANOS</a></li>
+                          <li><a href="{% url 'trabaja1' %}">TRABAJA CON NOSOTROS</a></li>
+                      </ul>
+                  </li>
+
+
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+      <div class="container">
+          <h1>NUESTROS PRODUCTOS:</h1>
+          <p>En nuestra tienda de barrio es necesario ofrecer perecederos, para comenzar.
+              Por otra parte, en algunos casos, las tiendas de barrio pueden incluir cervezas, vinos y licores,
+              y lo mismo se puede encontrar puré de tomate, servilletas, leches, fideos o  anchoas, sin contar
+              con muchos otros productos que te detallamos a continuación.
+              Estos son algunos de los productos básicos que cualquier tienda de conveniencia debería
+              tener para emprender su negocio. Puedes empezar con algunos productos de cada categoría de mayor
+              demanda en tu localidad:</p>
+          <a href="{% url 'bebidas1' %}"
+          <li><U><B>BEBIDAS:</B></U></li><div align="left"</div>
+          </a>
+
+          <p>Las bebidas saborizadas contienen azúcar, agua, saborizantes artificiales,
+              ácidos como el fosfórico, cítrico, málico, tartárico, cafeína, colorantes, endulcorantes,
+              dióxido de carbono, conservadores, entre otros. El agua es el principal elemento de la bebida,
+              por lo que es primordial el tratamiento de la misma, normalmente es mediante osmosis inversa,
+              filtración, ozonificación o diferentes tipos de tratamiento para agua purificada.</p>
+          <p><div align="center"><img src="{%static 'core/IMG/bebida2.jpg' %}"
+                                       alt="Bebida"
+                                       width="150"
+                                       height="150"></div> </p>
+
+          <a href="{% url 'dulces1' %}"
+          <li><U><B>DULCES:</B></U></li><div align="left"</div></a>
+          <p>En una lista de ingredientes, pueden enumerarse como sacarosa (azúcar de mesa),
+              edulcorante de maíz, jarabe de maíz alto en fructosa, concentrados de jugo de frutas,
+              néctares, azúcar en bruto, jarabe de malta, jarabe de arce, edulcorantes de fructosa,
+              fructosa líquida, miel, melaza o dextrosa anhidra.</p>
+          <p><div align="center"><img src="{%static 'core/IMG/dulces1.jpg' %}"
+                                       alt="dulce"
+                                       width="180"
+                                      height="180"> </div></p>
+
+          <a href="{% url 'verduras1' %}"
+           <li><U><B>VERDURAS:</B></U></li><div align="left"</div></a>
+          <p>Están compuestas mayoritariamente por hidratos de carbono, polisacáridos y,
+              en menor medida, proteínas y grasas. Tienen un alto contenido de agua,
+              entre un 75 y un 95 por ciento de su composición. Son ricas en fibra soluble
+              e insoluble.</p>
+
+          <p><div align="center"><img src="{%static 'core/IMG/verduras1.jpg' %}"
+                                            alt="verduras"
+                                            width="180"
+                                            height="180"></div></p>
+
+          <a href="{% url 'carnes1' %}"
+          <li><U><B>CARNES:</B></U></li><div align="left"</div></a>
+          <p>La NOM-009-Zoo-1994 define como carne, a la estructura compuesta
+              por fibras musculares estriadas, acompañadas o no de tejido conjuntivo
+              elástico, grasa, fibras nerviosas, vasos linfáticos y sanguíneos, de las especies
+              animales autorizadas para el consumo humano.</p>
+          <p><div align="center"><img src="{%static 'core/IMG/carnes1.jpg' %}"
+                                       alt="carnes"
+                                       width="180"
+                                       height="180"></div> </p>
+
+          <a href="{% url 'higiene1' %}"
+          <li><U><B>HIGIENE:</B></U></li><div align="left"</div></a>
+          <p>Es aquella formulación cuya función principal es remover
+              la suciedad, desinfectar, aromatizar el ambiente y propender el cuidado de utensilios,
+              objetos, ropas o áreas que posteriormente estarán en contacto con el ser humano
+              independiente de su presentación comercial.</p>
+          <p><div align="center"><img src="{%static 'core/IMG/higiene1.jpg' %}"
+                                       alt="higiene"
+                                       width="200"
+                                       height="200"> </div></p>
+
+
+      </div>
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>Pagina diseñada por:</p>
+          <p>LOOR ALVAREZ</p>
+          <p>LEON ALVIA</p>
+          <P>Proyecto</P>
+        </div>
+      </footer>
+
+    </body>
+
+</html>

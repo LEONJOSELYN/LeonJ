@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>CONTACTANOS</title>
+        {% load static %}
+        <link rel = "stylesheet" href="{%static 'core/CSS/estilos.css'%}">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">TIENDA</a>
+            <nav class="nav">
+              <ul>
+                  <li><a href="{% url 'inicio1' %}">INICIO</a></li>
+                  <li><a href="{% url 'quienes1' %}">QUIENES SOMOS</a></li>
+                  <li><a href="{% url 'nuestros1' %}">NUESTROS PRODUCTOS</a>
+                      <ul>
+                          <li><a href="{% url 'bebidas1' %}">BEBIDAS</a></li>
+                          <li><a href="{% url 'dulces1' %}">DULCES</a></li>
+                          <li><a href="{% url 'verduras1' %}">VERDURAS</a></li>
+                          <li><a href="{% url 'carnes1' %}">CARNES</a></li>
+                          <li><a href="{% url 'higiene1' %}">HIGIENE</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'contacto1' %}">CONTACTOS</a>
+                      <ul>
+                          <li><a href="{% url 'quejas1' %}">CONTACTANOS</a></li>
+                          <li><a href="{% url 'trabaja1' %}">TRABAJA CON NOSOTROS</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'miperfil' %}">QUIENES SOMOS</a></li>
+
+
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+      <div class="container">
+          <h1>CONTACTA A NUESTRA EMPRESA:</h1>
+          <form>
+
+              <p><label for="nombre">Ingrese su Nombre:</label>
+              <input type="text" placeholder="Escribe tu Nombre" name="nombre" id="nombre"></p>
+
+              <p><label for="telefono">Ingrese su numero de telefono:</label>
+              <input type="text" placeholder="Numero de Telefono" id="telefono"></p>
+
+              <p><label for="email">Ingrese su Correo:</label>
+              <input type="email" placeholder="Correo" id="email"></p>
+
+              <p><label for="asunto">Ingrese el Asunto:</label>
+              <input type="text" placeholder="Escribe el Asunto" name="asunto" id="asunto"></p>
+
+              <p><label for="mensaje">Ingrese su Mensaje:</label>
+              <input type="text" placeholder="Mensaje" id="mensaje"></p>
+
+
+          </form>
+      </div>
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>Pagina diseñada por:</p>
+          <p>LOOR ALVAREZ</p>
+          <p>LEON ALVIA</p>
+          <P>Proyecto</P>
+        </div>
+      </footer>
+    </body>
+
+</html>

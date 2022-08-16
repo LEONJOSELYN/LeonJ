@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>CARNES</title>
+        {% load static %}
+        <link rel = "stylesheet" href="{%static 'core/CSS/estilos.css'%}">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">TIENDA</a>
+            <nav class="nav">
+              <ul>
+                  <li><a href="{% url 'inicio1' %}">INICIO</a></li>
+                  <li><a href="{% url 'quienes1' %}">QUIENES SOMOS</a></li>
+                  <li><a href="{% url 'nuestros1' %}">NUESTROS PRODUCTOS</a>
+                      <ul>
+                          <li><a href="{% url 'bebidas1' %}">BEBIDAS</a></li>
+                          <li><a href="{% url 'dulces1' %}">DULCES</a></li>
+                          <li><a href="{% url 'verduras1' %}">VERDURAS</a></li>
+                          <li><a href="{% url 'carnes1' %}">CARNES</a></li>
+                          <li><a href="{% url 'higiene1' %}">HIGIENE</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'contacto1' %}">CONTACTOS</a>
+                      <ul>
+                          <li><a href="{% url 'quejas1' %}">CONTACTANOS</a></li>
+                          <li><a href="{% url 'trabaja1' %}">TRABAJA CON NOSOTROS</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'miperfil' %}">QUIENES SOMOS</a></li>
+
+
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+      <div class="container">
+          <h1>CARNES QUE OFRECEMOS:</h1>
+          <li><U><B>CARNES:</B></U></li>
+          <p1>La NOM-009-Zoo-1994 define como carne, a la estructura compuesta
+              por fibras musculares estriadas, acompañadas o no de tejido conjuntivo
+              elástico, grasa, fibras nerviosas, vasos linfáticos y sanguíneos, de las especies
+              animales autorizadas para el consumo humano.</p1>
+
+          <hr>
+
+          <li>CARNE DE CERDO</li>
+          <p><div align="center"><img src="{%static 'core/IMG/cerdo1.jpg' %}"
+                                       alt="chicles"
+                                       width="250"
+                                       height="200"> </p>
+          <hr>
+
+          <div align="left"><li>CARNE DE RES</li>
+          <p><div align="center"><img src="{%static 'core/IMG/res1.jpg' %}"
+                                       alt="gomitas"
+                                       width="250"
+                                       height="200"> </p>
+
+          <hr>
+
+          <div align="left"><li>POLLO</li>
+          <p><div align="center"><img src="{%static 'core/IMG/pollo1.jpg' %}"
+                                       alt="chupetes"
+                                       width="250"
+                                       height="200"> </p>
+
+          <hr>
+
+          <div align="left"><li>PESCADO</li>
+          <p><div align="center"><img src="{%static 'core/IMG/pescado1.jpg' %}"
+                                       alt="frituras"
+                                       width="250"
+                                       height="200"> </p>
+
+          <hr>
+
+          <div align="left"><li>HIGADO</li>
+          <p><div align="center"><img src="{%static 'core/IMG/higado1.jpg' %}"
+                                       alt="frituras"
+                                       width="250"
+                                       height="200"> </p>
+
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>Pagina diseñada por:</p>
+          <p>LOOR ALVAREZ</p>
+          <p>LEON ALVIA</p>
+          <P>Proyecto</P>
+        </div>
+      </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>HIGIENE</title>
+        {% load static %}
+        <link rel = "stylesheet" href="{%static 'core/CSS/estilos.css'%}">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">TIENDA</a>
+            <nav class="nav">
+              <ul>
+                  <li><a href="{% url 'inicio1' %}">INICIO</a></li>
+                  <li><a href="{% url 'quienes1' %}">QUIENES SOMOS</a></li>
+                  <li><a href="{% url 'nuestros1' %}">NUESTROS PRODUCTOS</a>
+                      <ul>
+                          <li><a href="{% url 'bebidas1' %}">BEBIDAS</a></li>
+                          <li><a href="{% url 'dulces1' %}">DULCES</a></li>
+                          <li><a href="{% url 'verduras1' %}">VERDURAS</a></li>
+                          <li><a href="{% url 'carnes1' %}">CARNES</a></li>
+                          <li><a href="{% url 'higiene1' %}">HIGIENE</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'contacto1' %}">CONTACTOS</a>
+                      <ul>
+                          <li><a href="{% url 'quejas1' %}">CONTACTANOS</a></li>
+                          <li><a href="{% url 'trabaja1' %}">TRABAJA CON NOSOTROS</a></li>
+                      </ul>
+                  </li>
+
+
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+      <div class="container">
+          <h1>HIGIENE QUE OFRECEMOS:</h1>
+          <li><U><B>HIGIENE:</B></U></li>
+          <p1>Es aquella formulación cuya función principal es remover
+              la suciedad, desinfectar, aromatizar el ambiente y propender el cuidado de utensilios,
+              objetos, ropas o áreas que posteriormente estarán en contacto con el ser humano
+              independiente de su presentación comercial.</p1>
+
+          <hr>
+
+          <li>PAPEL HIGIENICO</li>
+          <p><div align="center"><img src="{%static 'core/IMG/papel1.jpg' %}"
+                                       alt="chicles"
+                                       width="250"
+                                       height="200"> </p>
+          <hr>
+
+          <div align="left"><li>SHAMPOO</li>
+          <p><div align="center"><img src="{%static 'core/IMG/shampoo1.jpg' %}"
+                                       alt="gomitas"
+                                       width="250"
+                                       height="200"> </p>
+
+          <hr>
+
+          <div align="left"><li>JABON</li>
+          <p><div align="center"><img src="{%static 'core/IMG/jabon1.jpg' %}"
+                                       alt="chupetes"
+                                       width="250"
+                                       height="200"> </p>
+
+          <hr>
+
+          <div align="left"><li>FABULOSO</li>
+          <p><div align="center"><img src="{%static 'core/IMG/fabuloso1.jpg' %}"
+                                       alt="frituras"
+                                       width="250"
+                                       height="250"> </p>
+
+          <hr>
+
+          <div align="left"><li>ESPONJAS</li>
+          <p><div align="center"><img src="{%static 'core/IMG/esponjas1.jpg' %}"
+                                       alt="frituras"
+                                       width="250"
+                                       height="200"> </p>
+
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>Pagina diseñada por:</p>
+          <p>LOOR ALVAREZ</p>
+          <p>LEON ALVIA</p>
+          <P>Proyecto</P>
+        </div>
+      </footer>
+
+    </body>
+
+</html>

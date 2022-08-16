@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>QUIENES SOMOS</title>
+        {% load static %}
+        <link rel = "stylesheet" href="{%static 'core/CSS/estilos.css'%}">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">TIENDA</a>
+            <nav class="nav">
+              <ul>
+                  <li><a href="{% url 'inicio1' %}">INICIO</a></li>
+                  <li><a href="{% url 'quienes1' %}">QUIENES SOMOS</a></li>
+                  <li><a href="{% url 'nuestros1' %}">NUESTROS PRODUCTOS</a>
+                      <ul>
+                          <li><a href="{% url 'bebidas1' %}">BEBIDAS</a></li>
+                          <li><a href="{% url 'dulces1' %}">DULCES</a></li>
+                          <li><a href="{% url 'verduras1' %}">VERDURAS</a></li>
+                          <li><a href="{% url 'carnes1' %}">CARNES</a></li>
+                          <li><a href="{% url 'higiene1' %}">HIGENE</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'contacto1' %}">CONTACTOS</a>
+                      <ul>
+                          <li><a href="{% url 'quejas1' %}">CONTACTANOS</a></li>
+                          <li><a href="{% url 'trabaja1' %}">TRABAJA CON NOSOTROS</a></li>
+                      </ul>
+                  </li>
+
+
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+      <div class="container">
+          <h1>QUIENES SOMOS:</h1>
+          <h2>SOMOS LOOR ANGEL Y LEON JOSELYN</h2>
+          <p>Este proyecto es para una microempresa dedicada al abastecimiento del barrio<p>
+          <p1>Tienda Normita es una pequeña empresa tipo tienda de barrio, que esta a cargo de la señora Norma y
+          y que lleva 40 años en a cargo de este trabajo, cuyo objetivo principal es brindar a cada uno de nuestros clientes
+          la mejor calidad, servicio y atencion personalizada, cumpliendo con todos los requisitos de los clientes.
+          Se clasifica como microempresa aquella unidad económica que tiene activos totales hasta de 500 salarios mínimos mensuales legales vigentes y menos de 10 empleados.</p1>
+      </div>
+  <img src="{%static 'core/IMG/normita.jpg' %}"
+       alt="mensaje de la imagen"
+       width="300"
+       height="300"
+       title="Mi foto">
+
+  <img src="{%static 'core/IMG/bebida1.jpg' %}"
+       alt="bebida"
+       width="300"
+       height="300"
+       title="bebida">
+
+   <img src="{%static 'core/IMG/bebida2.jpg' %}"
+       alt="bebida"
+       width="300"
+       height="400"
+       title="bebida">
+
+    <img src="{%static 'core/IMG/bebida3.jpg' %}"
+       alt="bebida"
+       width="400"
+       height="400"
+       title="bebida">
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>Pagina diseñada por:</p>
+          <p>LOOR ALVAREZ</p>
+          <p>LEON ALVIA</p>
+          <P>Proyecto</P>
+        </div>
+      </footer>
+
+    </body>
+
+</html>

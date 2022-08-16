@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>{% block titulo %} {% endblock %}</title>
+        {% load static %}
+        <link rel = "stylesheet" href="{%static 'core/CSS/estilos.css'%}">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">TIENDA</a>
+            <nav class="nav">
+              <ul>
+                  <li><a href="{% url 'inicio1' %}">INICIO</a></li>
+                  <li><a href="{% url 'quienes1' %}">QUIENES SOMOS</a></li>
+                  <li><a href="{% url 'nuestros1' %}">NUESTROS PRODUCTOS</a>
+                      <ul>
+                          <li><a href="{% url 'bebidas1' %}">BEBIDAS</a></li>
+                          <li><a href="{% url 'dulces1' %}">DULCES</a></li>
+                          <li><a href="{% url 'verduras1' %}">VERDURAS</a></li>
+                          <li><a href="{% url 'carnes1' %}">CARNES</a></li>
+                          <li><a href="{% url 'higiene1' %}">HIGIENE</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'contacto1' %}">CONTACTOS</a>
+                      <ul>
+                          <li><a href="{% url 'quejas1' %}">CONTACTANOS</a></li>
+                          <li><a href="{% url 'trabaja1' %}">TRABAJA CON NOSOTROS</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="{% url 'inicioh' %}">PAG.HERENCIA</a></li>
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+        {% block contenido %}
+      <div class="container">
+          <h1>LA TIENDITA NORMITA</h1>
+          <p>En estos momentos de emergencia, el trabajador de las tiendas de barrio, puestos de mercado, despensas, carnicerías, panaderías, son otros de los héroes sin capa que tiene Ecuador. La variedad de productos, la cercanía a los hogares y el cuidado del tendero al despachar los alimentos los han convertido en una excelente opción para que la ciudadanía se abastezca y cuente con productos necesarios para el diario vivir.
+              En ese sentido, el Comité Público – Privado, conformado por los Ministerios de Producción, Comercio Exterior, Inversiones y Pesca (MPCEIP); Agricultura y Ganadería (MAG); el Consejo de Gobiernos Provinciales del Ecuador (CONGOPE); las asociaciones de Fabricantes de Alimentos y Bebidas (ANFAB), de Industrias de Bebidas No Alcohólicas del Ecuador (AIBE); y, la Red Ecuatoriana de Tenderos, trabajan en estrategias de fortalecimiento y apoyo a los vendedores minoristas con el propósito de dar continuidad a su actividad económica, respetando la cuarentena y medidas de bioseguridad para evitar contagios propios, de clientes o proveedores.
+              Entre las gestiones que ejecuta el Comité Público Privado se encuentra la priorización del acceso de tenderos a los mercados mayoristas y el fortalecimiento al cumplimiento de lineamientos y protocolos de bioseguridad.</p>
+      </div>
+
+
+        <div align="center">
+  <img src="{%static 'core/IMG/normita.jpg' %}"
+       alt="MI LOCAL"
+       width="300"
+       height="300"
+       title="LOCAL">
+            {% endblock %}
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>Pagina diseñada por:</p>
+          <p>LOOR ALVAREZ</p>
+          <p>LEON ALVIA</p>
+          <P>Proyecto</P>
+        </div>
+      </footer>
+    </body>
+
+</html>
